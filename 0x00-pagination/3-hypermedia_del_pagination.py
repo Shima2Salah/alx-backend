@@ -39,7 +39,8 @@ class Server:
             }
         return self.__indexed_dataset
 
-    def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict[str, Any]:
+    def get_hyper_index(self, index: int = None, page_size:
+                        int = 10) -> Dict[str, Any]:
         """Return a dictionary with pagination info."""
         assert isinstance(index, int) and index >= 0, "index must\
             be a non-negative integer"
